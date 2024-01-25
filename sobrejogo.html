@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o jogo</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'appcaosPL/style.css' %}">
+    <link rel="icon" href="{% static 'appcaosPL/logoico.ico' %}" type="image/x-icon">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><img src="https://seeklogo.com/images/I/iefp-logo-28614A781E-seeklogo.com.png" alt="IEFP"></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'sobrejogo' %}">Conheça o jogo</a></li>
+            <li><a href="{% url 'instrucoes' %}">Como jogar?</a></li>
+            <li><a href="{% url 'link' %}">Download</a></li>
+            <li><img src="{% static 'appcaosPL/logo.png' %}" alt=""></li>
+        </ul>
+    </nav>
+
+    <h1>A história por trás de tudo</h1>
+
+    <h2>
+    <div class="content">
+        <p>O Flappy Bird, jogo que inspirou o projeto "Caos no Polo Norte", foi criado pelo desenvolvedor vietnamita Dong Nguyen e lançado em maio de 2013. O jogo tornou-se incrivelmente popular devido à sua simplicidade e dificuldade desafiadora.</p>
+        
+        <p>O Jogo <i>Caos no Polo Norte</i> foi idealizado pelos formandos Camilla Nunes, Izabel Forte, João Pereira e Lybia Marçal para apresentação como trabalho final da UFCD 10794 Python Avançado, sob instruções do formador Manuel Marinho. <br>
+        O projeto foi desenvolvido em Python, utilizando a biblioteca Pygame, o framework Django e códigos HTML e CSS.</p>
+
+        <p>Pygame é uma biblioteca de jogos em Python que permite a criação de jogos de forma relativamente simples, enquanto Django é um framework web de alto nível que facilita a construção de aplicativos web robustos e escaláveis.</p>
+    </div>
+    </h2>
+    
+    <img class="imgjogo" src="{% static 'appcaosPL/imginicial.jpeg' %}" alt="Imagem do Jogo">
+    
+    
+
+</body>
+</html>
+

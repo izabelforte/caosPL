@@ -1,0 +1,135 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+
+}
+
+body {
+    position: relative;
+    background-image: url('/static/appcaosPL/fundo.png');
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+
+.imgjogo {
+    width: 100%; /* Torna a imagem responsiva */
+    max-width: 400px; /* Define a largura máxima da imagem */
+    float: right; /* Alinha a imagem à direita */
+    margin-top: 20px; /* Adiciona espaço acima da imagem */
+    margin-right: 50px; /* Adiciona espaço à esquerda da imagem */
+}
+
+
+
+.navbar {
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: #28B463;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: #48C9B0;
+    color: #E74C3C;
+}
+
+.navbar img {
+    display: block;
+    padding: 10px;
+    height: 30px;
+}
+
+audio {
+    display: none;
+    position: absolute;
+    top: 10px; /* Ajuste a distância do topo conforme necessário */
+    right: 10px; /* Ajuste a distância da direita conforme necessário */
+    margin: 0;
+}
+
+#custom-audio-controls {
+    position: absolute;
+    top: 10px; /* Ajuste a distância do topo conforme necessário */
+    right: 10px; /* Ajuste a distância da direita conforme necessário */
+    cursor: pointer;
+}
+
+#custom-audio-controls img {
+    width: 40px; /* Ajuste a largura da imagem conforme necessário */
+    height: auto;
+}
+
+.custom-button {
+    display: block;
+    background-color: aliceblue;
+    color: #28B463;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    float: none;
+}
+
+.custom-button:hover {
+    background-color: #48C9B0;
+    color: #E74C3C;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+    text-align:center;
+    font-size: 50px;
+    color: #1e9851;
+    line-height: 1.5;
+    text-shadow: 2px 2px 3px black; 
+}
+
+h2{
+    font-family:Impact;
+    font-size: 36px;
+    color: black;
+    line-height: 1.5;
+    text-shadow: 2px 2px white;
+    text-align:justify;
+    text-indent: 60px; /*incluir recuo na primeira linha*/
+    
+}
+
+
+.content {
+    max-width: 800px; /* Define a largura máxima do conteúdo */
+    margin-right: auto; /* Centraliza o conteúdo na página */
+    float: left; /* Alinha o texto à esquerda */
+    
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'appcaosPL/style.css' %}">
+    <link rel="icon" href="{% static 'appcaosPL/logoico.ico' %}" type="image/x-icon">
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul>
+            <li><img src="https://seeklogo.com/images/I/iefp-logo-28614A781E-seeklogo.com.png" alt="IEFP"></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'sobrejogo' %}">Conheça o jogo</a></li>
+            <li><a href="{% url 'instrucoes' %}">Como jogar?</a></li>
+            <li><a href="{% url 'link' %}">Download</a></li>
+            <li><img src="{% static 'appcaosPL/logo.png' %}" alt=""></li>
+        </ul>
+    </nav>
+
+    
+
+    <h1>Descarrega o jogo aqui</h1>
+    <button class="custom-button">Aperte aqui</button> 
+</body>
+</html>

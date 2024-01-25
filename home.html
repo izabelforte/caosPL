@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caos no Polo Norte</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'appcaosPL/style.css' %}"> <!--esta linha chama o código CSS, por estarmos usando o django, foi necessário criar uma pasta chamada static para colocar o código-->
+    <link rel="icon" href="{% static 'appcaosPL/logoico.ico' %}" type="image/x-icon"> <!--Icone da aba das páginas-->
+    <style>
+        body {
+            background-image: url('/static/appcaosPL/fundo2.png'); /* Substitua 'caminho/da/sua/imagem.jpg' pelo caminho real da sua imagem */
+            background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o plano de fundo */
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            background-position: relative; /* Centraliza a imagem no plano de fundo */
+        }
+
+        /* Adicione mais estilos conforme necessário */
+    </style>
+
+</head>
+<body>
+  
+                                                                               
+    <nav class="navbar">
+        <ul>
+            <li><img src="https://seeklogo.com/images/I/iefp-logo-28614A781E-seeklogo.com.png" alt="IEFP"></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'sobrejogo' %}">Conheça o jogo</a></li>
+            <li><a href="{% url 'instrucoes' %}">Como jogar?</a></li>
+            <li><a href="{% url 'link' %}">Download</a></li>
+            <li><img src="{% static 'appcaosPL/logo.png' %}" alt=""></li>
+        </ul>
+    </nav>
+
+    <h1></h1>
+    
+    <audio id="audio">
+        <source src="{% static 'appcaosPL/musicfundo.mp3' %}" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div id="custom-audio-controls">
+        <img id="play-img" src="{% static 'appcaosPL/iconesom.png' %}" alt="Play">
+        <img id="pause-img" src="{% static 'appcaosPL/iconesommute.png' %}" alt="Pause" style="display: none;">
+    </div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        const playImg = document.getElementById('play-img');
+        const pauseImg = document.getElementById('pause-img');
+        const customControls = document.getElementById('custom-audio-controls');
+
+        customControls.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                playImg.style.display = 'none';
+                pauseImg.style.display = 'inline';
+            } else {
+                audio.pause();
+                playImg.style.display = 'inline';
+                pauseImg.style.display = 'none';
+            }
+        });
+    </script>
+
+
+        
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como jogar</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'appcaosPL/style.css' %}">
+    <link rel="icon" href="{% static 'appcaosPL/logoico.ico' %}" type="image/x-icon">
+    
+</head>
+
+<body>
+    
+    
+    <nav class="navbar">
+        <ul>
+            <li><img src="https://seeklogo.com/images/I/iefp-logo-28614A781E-seeklogo.com.png" alt="IEFP"></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'sobrejogo' %}">Conheça o jogo</a></li>
+            <li><a href="{% url 'instrucoes' %}">Como jogar?</a></li>            
+            <li><a href="{% url 'link' %}">Download</a></li>
+            <li><img src="{% static 'appcaosPL/logo.png' %}" alt=""></li>
+        </ul>
+        
+    </nav>
+
+
+    <h1>Como jogar: </h1>
+    <h2>
+    <div class="content">
+        <p>O jogo "Caos no Polo Norte" é muito intuitivo e fácil de jogar. Utilize a barra de espaço do teclado para fazer o personagem Noel pular e passar pelos obstáculos. Mantenha-se atento aos tubos verdes e veja quantos pontos você consegue marcar!</p>
+    </div>
+    </h2>
+
+    <img src="{% static 'appcaosPL/teclado.png' %}" alt="Imagem do Jogo">
+
+    <br>
+    <br>
+    <br>
+    <table>
+        <thead>
+            <!--Criar linha = tr-->
+            <tr>
+                <!--celula dentro do thead-->
+                <th><img src="{% static 'appcaosPL/nivel1.png' %}" alt=""></th>
+                <th><img src="{% static 'appcaosPL/nivel2.png' %}" alt=""></th>
+                <th><img src="{% static 'appcaosPL/gameover.png' %}" alt=""></th>
+            </tr>
+        </thead>
+    </table>
+
+</body>
+</html>
