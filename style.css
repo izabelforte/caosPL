@@ -20,11 +20,11 @@ body {
 
 
 .imgjogo {
-    width: 100%; /* Torna a imagem responsiva */
-    max-width: 400px; /* Define a largura máxima da imagem */
-    float: right; /* Alinha a imagem à direita */
-    margin-top: 20px; /* Adiciona espaço acima da imagem */
-    margin-right: 50px; /* Adiciona espaço à esquerda da imagem */
+    width: 100%;
+    max-width: 400px; 
+    float: right; 
+    margin-top: 20px; 
+    margin-right: 50px; 
 }
 
 
